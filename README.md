@@ -21,7 +21,7 @@ These scripts cycle through all accounts on the server, assuming they use WordPr
 
 `./plugin-search.sh *plugin name*` - Searches the accounts for the inputted plugin and returns its status for each account.  This must be entered as the plugin's folder name.
 
-`./plugin-install.sh *plugin name` - Will install and activate the inputted plugin from the Wordpress.org repo to each account.  This must be entered as the plugin's folder name.
+`./plugin-install.sh *plugin name*` - Will install and activate the inputted plugin from the Wordpress.org repo to each account.  This must be entered as the plugin's folder name.
 
 `./plugin-remove.sh *plugin name*` - Will deactivate and uninstall the inputted plugin from the accounts.  This must be entered as the plugin's folder name.
 
@@ -33,36 +33,6 @@ These scripts cycle through all accounts on the server, assuming they use WordPr
 
 `./update-wp.sh *version number*` - Updates WP core and database to the given version number.
 
-`./auto-plugin.update.sh` - Updates all plugins that have updates available on the account.
+`./auto-plugin-update.sh` - Updates all plugins that have updates available on the account.
 
 `./auto-theme-update.sh` - Updates all themes that have updates available on the account.
-
-
-## CLI Setup ##
-
-`curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar`
-
-`chmod +x wp-cli.phar`
-
-`mkdir /usr/local/bin/wp`
-
-`mkdir /usr/local/bin/sp`
-
-`cp wp-cli.phar /usr/local/bin/wp`
-
-`mv wp-cli.phar /usr/local/bin/sp`
-
-# Scripts #
-
-`wget https://github.com/cdsalmons/cPanel-wp-management/archive/master.zip`
-
-`unzip /path/to/master.zip`
-
-unzip file.zip -d destination_folder
-
--OR-
-
-`git clone https://github.com/cdsalmons/cPanel-wp-management`
-
-
-
